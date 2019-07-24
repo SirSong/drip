@@ -1,0 +1,46 @@
+<!--index.wxml-->
+<view class="container">
+  <image class='in-image' mode='aspectFill' src="../images/sickless.png"></image>
+  <view class="topView">
+    <view class="topFirst">
+      <label>还要</label>
+      <label class="topTime">{{leftTime}}</label>
+      <label>分钟</label>
+    </view>
+    <view class="topSecond">
+      <label class="topSpeed">{{speed}}</label>
+      <label>滴/分钟</label>
+    </view>
+  </view>
+  <view class="topViewCopy"></view>
+  
+  <view class="middleView" bindtap="fillAction">
+    <view class="middleSize">药瓶容量</view>
+    <label class="middleDanwei">{{containerSize}}</label>
+    <label class="middleInfo">毫升 | 还剩</label>
+    <label class="middleRate">{{leftRate}}</label>
+    <view class="middleBtn" bindtap="fillAction">点击修改初始药量</view>
+  </view>
+  <view class="middleCopy"></view>
+  <image class="diandiBtn" src="{{diandiImage}}" bindtap="diandiAction" mode="scaleToFill" bindtouchstart="handleTouchStart" 
+bindtouchend="handleTouchEnd"></image>
+
+  <view class="bottomView">
+    <view class="bottomLeft">
+      <label>注 |</label>
+    </view>
+    <view class="bottomRight">
+      <!-- <view>修改当前药量和剩余量.</view> -->
+      <view>请跟随液滴滴落的速度,点击此水滴形按钮.</view>
+      <view>预计<label class="bottomRightLabel">5次</label>左右可以计算出液滴速度.</view>
+    </view>
+  </view>
+</view>
+
+
+<!-- 这部分内容可以灵活修改，例如改成一个模态框 -->
+<view class="showModule" wx:if="{{isShow}}" >
+<view class="text ">{{text}}</view>
+</view>
+
+
