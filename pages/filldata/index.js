@@ -122,6 +122,7 @@ Page({
     })
   },
   sureAction:function(){
+    console.log(123123)
     var that = this;
     wx.reLaunch({
       url: '../../pages/index/index?containerSize=' + that.data.sizeList[that.data.swiperIndex] + '&leftRate=' + that.data.leftRate

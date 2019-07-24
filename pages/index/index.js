@@ -35,7 +35,12 @@ Page({
     })
   },
   onLoad: function (options) {
-
+    if (JSON.stringify(options) != "{}") {
+      this.setData({
+        leftRate:options.leftRate,
+        containerSize: options.containerSize
+      })
+    }
   },
   fillAction: function(e){
     var that=this;
