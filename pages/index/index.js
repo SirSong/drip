@@ -103,5 +103,11 @@ Page({
     this.setData({
       diandiImage: '../images/shuidi_normal@3x.png'
     })
+  },
+  onShareAppMessage: function() {
+    return {
+      title: '不骗你，我真的在输液，明白该做什么了么？',
+      path: this.is
+    }
   }
 })

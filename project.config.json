@@ -23,13 +23,13 @@
 	},
 	"compileType": "miniprogram",
 	"libVersion": "2.7.2",
-	"appid": "wxdcceb8cbab13541a",
+	"appid": "wx973d4e73d5b966fa",
 	"projectname": "Diandi",
 	"debugOptions": {
 		"hidedInDevtools": []
 	},
 	"isGameTourist": false,
-	"simulatorType": "小点滴",
+	"simulatorType": "wechat",
 	"simulatorPluginLibVersion": {},
 	"condition": {
 		"search": {

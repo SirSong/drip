@@ -122,10 +122,15 @@ Page({
     })
   },
   sureAction:function(){
-    console.log(123123)
     var that = this;
     wx.reLaunch({
       url: '../../pages/index/index?containerSize=' + that.data.sizeList[that.data.swiperIndex] + '&leftRate=' + that.data.leftRate
     })
+  },
+  onShareAppMessage: function() {
+    return {
+      title: '不骗你，我真的在输液，明白该做什么了么？',
+      path: '/pages/index/index'
+    }
   }
 })

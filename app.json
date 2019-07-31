@@ -1,8 +1,7 @@
 {
   "pages": [
     "pages/index/index",
-    "pages/filldata/index",
-    "pages/logs/logs"
+    "pages/filldata/index"
   ],
   "window": {
     "backgroundTextStyle": "light",
