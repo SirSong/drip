@@ -6,38 +6,49 @@ page{
   top:0;
   left:0;
   width:100%;
-  height:20%;
-  /* background: gray; */
-  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
 }
 .info label{
   color:  #FD7675;
-  font-family: 'PingFang';
-  font-weight: lighter;
+  width: 100rpx;
 }
-.info_title{
-  margin: 30rpx;
-  font-family: 'PingFang';
 
+.info label.left {
+  text-align: right;
+}
+
+.info-content {
+  display: flex;
+  justify-content: center;
+  align-items: baseline;
+  width: 100%;
+}
+
+.info_title{
   font-size: 50rpx;
   color: #222;
+  margin: 20rpx 0 30rpx;
 }
 .info_num{
   font-size: 80rpx;
   color: #FD7675;
-  margin: 10rpx;
-  font-family: 'PingFang';
-  font-weight: lighter;
+  width: 25%;
 }
+
+.info_num.left {
+  text-align: right;
+}
+
 .info_line{
   font-size: 80rpx;
   background: #71BEE8;
   width: 5rpx;
   height: 100rpx;
-  margin-bottom: -25rpx;
-  margin-left: 50rpx;
-  margin-right: 50rpx;
-  display: inline-block;
+  margin: 0 20rpx;
+  align-self: flex-end;
 }
 
 .touch-container {

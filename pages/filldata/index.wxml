@@ -2,11 +2,13 @@
 <view>
   <view class="info">
     <view class="info_title">确认剩余药量</view>
-    <label class="info_num">{{sizeList[swiperIndex]}}</label>
-    <label>毫升</label>
-    <view class="info_line"></view>
-    <label>还剩</label>
-    <label class="info_num">{{leftRate}}</label>
+    <view class="info-content"> 
+      <view class="info_num left">{{sizeList[swiperIndex]}}</view>
+      <label class="left">毫升</label>
+      <view class="info_line"></view>
+      <label>还剩</label>
+      <view class="info_num right">{{leftRate}}</view>
+    </view>
   </view>
   <view class="touch-container">
     <image class="img" src="{{src}}" style="width: {{width}}rpx; height: {{height}}rpx; left: {{left}}rpx; top: {{top}}rpx; transform: translate(-50%, -50%) scale({{ scale }}) rotate({{ rotate }}deg);" bindload="bindload" catchtouchstart="touchstart" catchtouchmove="touchmove" catchtouchend="touchend"></image>

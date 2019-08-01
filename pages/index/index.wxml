@@ -29,7 +29,7 @@
       <view class="middle-bg"></view>
       <view class="middleSize">药瓶容量</view>
       <view class="steps">
-        <label class="middleDanwei">{{containerSize}}</label>
+        <label class="middleDanwei">{{500}}</label>
         <label class="middleInfo">毫升</label>
         <label class="inline"></label>
         <label class="middleInfo">还剩</label>
@@ -53,6 +53,7 @@
   </view>
 </view>
 <!-- 这部分内容可以灵活修改，例如改成一个模态框 -->
-<view class="showModule" wx:if="{{isShow}}">
-  <view class="text ">{{text}}</view>
+<view class="showModule" wx:if="{{showShare}}">
+  <view class="text ">转发小程序给哪个该出现的人</view>
+  <icon bindtap="closeShow" type="cancel" size="10" color="#b3b3b3"/>
 </view>

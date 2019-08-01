@@ -13,7 +13,8 @@ Page({
     leftTime:0,
     speed:0,
     counterArray:[],
-    diandiImage:'../images/shuidi_normal@3x.png'
+    diandiImage:'../images/shuidi_normal@3x.png',
+    showShare: true
   },
   //弹窗提示
   showToast: function (e) { //方法
@@ -41,6 +42,9 @@ Page({
         containerSize: options.containerSize
       })
     }
+    this.setData({
+      showShare: !wx.getStorageSync('showed')
+    })
   },
   fillAction: function(e){
     var that=this;
@@ -103,6 +107,12 @@ Page({
     this.setData({
       diandiImage: '../images/shuidi_normal@3x.png'
     })
+  },
+  closeShow () {
+    this.setData({
+      showShare: false
+    })
+    wx.setStorageSync('showed', true)
   },
   onShareAppMessage: function() {
     return {
